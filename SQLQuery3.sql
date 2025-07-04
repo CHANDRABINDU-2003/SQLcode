@@ -1,0 +1,1 @@
+select id from instructor where salary> any(select salary from instructor where dept_name='biology');

@@ -1,0 +1,1 @@
+select course_id from section where year=2009 group by course_id having count(*)>=2;

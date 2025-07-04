@@ -1,0 +1,2 @@
+select dept_name,count(distinct instructor.ID) from instructor join teaches on instructor.ID=teaches.ID join section on teaches.course_id=section.course_id
+where section.semester='Spring' and section.year=2010 group by dept_name;

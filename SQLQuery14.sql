@@ -1,0 +1,1 @@
+select name from instructor where salary > all(select salary from instructor where dept_name='History');

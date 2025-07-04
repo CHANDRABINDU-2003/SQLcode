@@ -1,0 +1,1 @@
+select dept_name from instructor group by dept_name having avg(salary)>=ALL(select avg(salary) from instructor group by dept_name);
